@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+	<nav>		
+		<home>
+			<label>Strona główna</label>
+			<uri>/admin</uri>
+		</home>
+                <news>
+                    <label>Aktualności</label>
+                    <uri>/admin/actuals</uri>
+                </news>
+		<players>
+			<label>Zawodnicy</label>
+			<uri>/admin/players</uri>
+		</players>
+		<tournaments>
+			<label>Turnieje</label>
+			<uri>/admin/tournaments</uri>
+		</tournaments>
+		<ranks>
+			<label>Ranking</label>
+			<uri>/admin/ranks</uri>
+		</ranks>
+                <foto>
+                    <label>Galerie zdjęć</label>
+                    <uri>/admin/foto</uri>
+                </foto>
+                <pages>
+                    <label>Strony statyczne</label>
+                    <uri>/admin/pages</uri>
+                </pages>
+
+	</nav>
+</configdata>

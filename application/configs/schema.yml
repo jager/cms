@@ -1,0 +1,486 @@
+---
+detect_relations: true
+options:
+  collate: utf8_polish_ci
+  charset: utf8
+  type: MyIsam
+
+Galery:
+  tableName: Galeries
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      unsigned: true
+      notnull: true
+      autoincrement: true
+    gname:
+      type: string(100)
+      notnull: true
+    gdescription:
+      type: clob(65535)
+    owner:
+      type: integer(4)
+      notnull: true
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Foto:
+  tableName: Fotos
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      unsigned: true
+      notnull: true
+      autoincrement: true
+    sourcename:
+      type: string(50)
+      notnull: true
+    description:
+      type: string(200)
+    tags:
+      type: clob(65535)
+    owner:
+      type: integer(4)
+      notnull: true
+    author:
+      type: string(100)
+    added:
+      type: timestamp
+    Galeries_id:
+      type: integer(4)
+      unsigned: true
+      notnull: true
+  relations:
+    Galery:
+      class: Galery
+      local: Galeries_id
+      foreign: id
+      foreignAlias: Fotos
+      onDelete: cascade
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Tag:
+  tableName: Tags
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      unsigned: true
+      notnull: true
+      autoincrement: true
+    tname:
+      type: string(50)
+      notnull: true
+  indexes:
+    ind_tag_name:
+      fields: [tname]
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Adminuser:
+  tableName: Adminusers
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    username:
+      type: string(40)
+      notnull: true
+    password:
+      type: string(40)
+      notnull: true
+    mailadr:
+      type: string(150)
+      notnull: true
+    fname:
+      type: string(50)
+      notnull: true
+    sname:
+      type: string(100)
+      notnull: true
+    created:
+      type: timestamp
+      notnull: true
+      default: current_timestamp
+    edited:
+      type: timestamp
+    lastcorrectlogin:
+      type: timestamp
+    lastfaultylogin:
+      type: timestamp
+    loginamount:
+      type: integer(4)
+      default: 0
+    active:
+      type: string(1)
+      notnull: true
+      default: '0'
+      fixed: true
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Aktual:
+  tableName: Aktuals
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    title:
+      type: string(150)
+    shortcontent:
+      type: clob(65535)
+    fullcontent:
+      type: clob(65535)
+    tags:
+      type: clob(65535)
+    created:
+      type: timestamp
+    edited:
+      type: timestamp
+    active:
+      type: string(1)
+      fixed: true
+    link:
+      type: string(160)
+    published:
+      type: timestamp
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Label:
+  tableName: Labels
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    Gname:
+      type: string(50)
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+AktualsLabel:
+  tableName: AktualsLabels
+  columns:
+    Aktuals_id:
+      type: integer(4)
+      primary: true
+      notnull: true
+    Labels_id:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    Aktual:
+      class: Aktual
+      local: Aktuals_id
+      foreign: id
+      foreignAlias: AktualsLabels
+      onDelete: cascade
+    Label:
+      class: Label
+      local: Labels_id
+      foreign: id
+      foreignAlias: AktualsLabels
+      onDelete: cascade
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Page:
+  tableName: Pages
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      unsigned: true
+      notnull: true
+      autoincrement: true
+    pname:
+      type: string(100)
+    link:
+      type: string(120)
+    hd_title:
+      type: string(200)
+    hd_keywords:
+      type: clob(65535)
+    content:
+      type: clob(65535)
+    created:
+      type: timestamp
+      default: systimestamp
+    edited:
+      type: timestamp
+    active:
+      type: string(1)
+      fixed: true
+    owner:
+      type: string(30)
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Pageshistory:
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      unsigned: true
+      notnull: true
+      autoincrement: true
+    backedup:
+      type: timestamp
+    content:
+      type: string(45)
+    backedup_by:
+      type: string(30)
+    Pages_id:
+      type: integer(4)
+      unsigned: true
+      notnull: true
+  relations:
+    Page:
+      class: Page
+      local: Pages_id
+      foreign: id
+      foreignAlias: Pageshistories
+      onDelete: cascade
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+TagsRelation:
+  tableName: TagsRelations
+  columns:
+    Tags_id:
+      type: integer(4)
+      primary: true
+      unsigned: true
+      notnull: true
+    rel_id:
+      type: integer(4)
+      primary: true
+      notnull: true
+    relname:
+      type: string(45)
+      primary: true
+      notnull: true
+  relations:
+    Tag:
+      class: Tag
+      local: Tags_id
+      foreign: id
+      foreignAlias: TagsRelations
+      onDelete: cascade
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Menu:
+  tableName: Menus
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    mname:
+      type: string(20)
+    type:
+      type: string(10)
+    link:
+      type: string(100)
+    parent_id:
+      type: integer(4)
+    active:
+      type: string(1)
+      fixed: true
+    Pages_id:
+      type: integer(4)
+      unsigned: true
+      notnull: true
+  relations:
+    Page:
+      class: Page
+      local: Pages_id
+      foreign: id
+      foreignAlias: Menus
+      onDelete: cascade
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Category:
+  tableName: Categories
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      notnull: true
+    cname:
+      type: string(100)
+    description:
+      type: clob(65535)
+    lft:
+      type: integer(4)
+    rgt:
+      type: integer(4)
+    added:
+      type: timestamp
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Catsetting:
+  tableName: Catsettings
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      notnull: true
+    sname:
+      type: string(100)
+    stype:
+      type: string(20)
+    predefinedvalues:
+      type: clob(65535)
+    skey:
+      type: string(100)
+    added:
+      type: timestamp
+    Categories_id:
+      type: integer(4)
+      notnull: true
+  relations:
+    Category:
+      class: Category
+      local: Categories_id
+      foreign: id
+      foreignAlias: Catsettings
+      onDelete: cascade
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Item:
+  tableName: Items
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      notnull: true
+    iname:
+      type: string(255)
+    description:
+      type: clob(65535)
+    added:
+      type: timestamp
+    tags:
+      type: clob(65535)
+    Categories_id:
+      type: integer(4)
+      notnull: true
+  relations:
+    Category:
+      class: Category
+      local: Categories_id
+      foreign: id
+      foreignAlias: Items
+      onDelete: cascade
+  options:
+    type: MyISAM
+
+Itemfeature:
+  tableName: Itemfeatures
+  columns:
+    intvalue:
+      type: integer(4)
+    charvalue:
+      type: string(255)
+    textvalue:
+      type: clob(65535)
+    datevalue:
+      type: date
+    Catsettings_id:
+      type: integer(4)
+      primary: true
+      notnull: true
+    Items_id:
+      type: integer(4)
+      primary: true
+      notnull: true
+    added:
+      type: timestamp
+    edited:
+      type: timestamp
+  relations:
+    Catsetting:
+      class: Catsetting
+      local: Catsettings_id
+      foreign: id
+      foreignAlias: Itemfeatures
+      onDelete: cascade
+    Item:
+      class: Item
+      local: Items_id
+      foreign: id
+      foreignAlias: Itemfeatures
+      onDelete: cascade
+  options:
+    charset: utf8
+    collate: utf8_polish_ci
+    type: MyISAM
+
+Itemhistory:
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      notnull: true
+    itemvalue:
+      type: string(45)
+    edited:
+      type: timestamp
+    Itemfeatures_Catsettings_id:
+      type: integer(4)
+      notnull: true
+    Itemfeatures_Items_id:
+      type: integer(4)
+      notnull: true
+  relations:
+    ItemfeaturesCatsetting:
+      class: Itemfeature
+      local: Itemfeatures_Catsettings_id
+      foreign: Catsettings_id
+      foreignAlias: Itemhistories
+      onDelete: cascade
+  options:
+    type: MyISAM
+

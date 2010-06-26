@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+	<nav>		
+		<home>
+			<label>Dashboard</label>
+			<uri>/</uri>
+			<pages>
+				<players>
+					<label>Players</label>
+					<uri>/admin/players</uri>
+				</players>
+				<tournaments>
+					<label>Tournaments</label>
+					<uri>/admin/tournaments</uri>
+				</tournaments>
+				<ranks>
+					<label>Ranks</label>
+					<uri>/admin/ranks</uri>
+				</ranks>
+			</pages>
+		</home>
+	</nav>
+</configdata>
