@@ -25,8 +25,9 @@
                     </div>
                     <!-- quick -->
                     <?php
-                        $this->navigation()->menu()->setPartial( array( 'elements/menu.inc', 'default' ) );
-                        echo $this->navigation()->menu()->render(); 
+                        //Zend_Debug::dump( APPLICATION_PATH );die();
+                       $this->navigation()->menu()->setPartial( array( 'elements/menu1.inc', 'default' ) );
+                       echo $this->navigation()->menu()->render();
                     ?>
                     <!-- end quick -->
                     <div class="corner tl"></div>
@@ -36,7 +37,7 @@
 <!-- end header -->
 <!-- content -->
 <div id="content">
-    <div class="box">
+    <div class="box <?php echo $this->placeholder('additionalclass') ?>">
         <div class="title">
             <?php
                 $this->placeholder('title')

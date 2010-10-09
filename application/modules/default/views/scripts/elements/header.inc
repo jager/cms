@@ -1,6 +1,5 @@
+<!-- HEADER (start) -->
 <div id="header">
-        <h1 id="logo">
-                <a href="index.html">plazowka-lodz.info</a>
-        </h1>
-        <?php echo $this->navigation()->menu()->setUlClass('sf-menu'); ?>
-</div><!-- end header -->
+    <h1><a href="/" title="NLO SMS PZPS w siatkówce plażowej" id="logo" class="ie6">Niepubliczne Liceum Ogólnokształcące<br /><span style="font-size: 18px;">Szkoła Mistrzostwa Sportowego Polskiego Związku Piłki Siatkowej w siatkówce plażowej</span></a></h1>
+</div><!-- #header (end) -->
+<!-- HEADER (end) -->

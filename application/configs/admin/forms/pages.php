@@ -19,6 +19,7 @@ displayGroups.page.elements.hd_keywords = hd_keywords
 displayGroups.page.elements.content = content
 displayGroups.page.elements.active = active
 displayGroups.page.elements.menuitem = menuitem
+displayGroups.page.elements.template = template
 
 displayGroups.menu.elements.mname = mname
 displayGroups.menu.elements.parent_id = parent_id
@@ -59,6 +60,19 @@ elements.content.options.attribs.rows = 25
 elements.content.options.required = true
 elements.content.options.belongsTo = page
 
+elements.template.type = select
+elements.template.options.label = "Templatka strony"
+elements.template.options.separator = ""
+elements.template.options.required = true
+elements.template.options.class = "{ required: true }"
+elements.template.options.multiOptions.m.key = "view"
+elements.template.options.multiOptions.m.value = "Pełna szerokość"
+elements.template.options.multiOptions.k.key = "mainpage"
+elements.template.options.multiOptions.k.value = "Strona główna"
+elements.template.options.multiOptions.f.key = "uczniowie-withsidebar"
+elements.template.options.multiOptions.f.value = "Menu boczne statyczne"
+elements.template.options.belongsTo = page
+
 elements.active.type = radio
 elements.active.options.decorators.viewHelper.decorator = "RadioViewHelper";
 elements.active.options.decorators.viewHelper.options.helper = "FormRadioWithDiv";
@@ -80,14 +94,14 @@ elements.active.options.belongsTo = page
 elements.menuitem.type = rawHtml
 elements.menuitem.options.belongsTo = page
 
-elements.mname.type = text
+elements.mname.type = checkbox
 elements.mname.options.label = "Nowy element menu"
 elements.mname.options.belongsTo = menu
-elements.mname.options.validators.maxlen.validator = "StringLength"
-elements.mname.options.validators.maxlen.options.min = "3"
-elements.mname.options.validators.maxlen.options.max = "20"
+;elements.mname.options.validators.maxlen.validator = "StringLength"
+;elements.mname.options.validators.maxlen.options.min = "3"
+;elements.mname.options.validators.maxlen.options.max = "20"
 elements.mname.options.attribs.class = "{ required: 'select#menuItemParentId [value=0]', maxlength: 20 }"
-elements.mname.options.attribs.maxlength = "20"
+;elements.mname.options.attribs.maxlength = "20"
 ;elements.mname.options.required = true
 
 elements.type.type = hidden

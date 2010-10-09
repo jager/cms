@@ -85,7 +85,11 @@ abstract class BaseAdminuser extends Doctrine_Record
              'fixed' => 1,
              'length' => '1',
              ));
-
+        $this->hasColumn('role', 'string', 20, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => '20',
+             ));
         $this->option('collate', 'utf8_polish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'MyISAM');
@@ -94,6 +98,8 @@ abstract class BaseAdminuser extends Doctrine_Record
     public function setUp()
     {
         parent::setUp();
-        
+        $this->hasMany('File as Files', array(
+                         'local' => 'id',
+                         'foreign' => 'owner'));
     }
 }

@@ -126,11 +126,10 @@ class Zend_Form_Decorator_File
                 $markup[] = $view->formFile($name, $htmlAttribs);
             }
         } else {
-            $markup[] = $view->formFile($name, $attribs);
+            $markup[] = $view->formFile($name, $attribs);            
         }
 
         $markup = implode($separator, $markup);
-
         switch ($placement) {
             case self::PREPEND:
                 return $markup . $separator . $content;

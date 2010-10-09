@@ -1,7 +1,13 @@
 <?php
 class Admin_PagesController extends Webbers_Controller_Action {
+
+    public function init() {
+        parent::init();
+        $this->_model = new Page();
+    }
+
     public function indexAction() {
-        $this->view->list = $this->listPages();
+        $this->view->list = $this->getList();
         //$this->view->form = $this->formPages( 'add' );
         //$this->view->menuaddform = $this->formPages( 'menuadd' );
         ///
@@ -11,74 +17,19 @@ class Admin_PagesController extends Webbers_Controller_Action {
         //Zend_Debug::dump($this->view->menuStructure);die();
     }
     public function addAction() {
-
-        $this->view->form = $this->prepareForm( 'add' );
         $this->view->menuItems = $this->getMenuItems();
         $this->view->menuItemsWithoutPages = $this->getMenuItems();
-        
-        if ( !$_POST or !$this->getRequest()->isPost() ) {
-            return;
-        }
-
-        $form = $this->formPages( 'add' );
-
-        if ( !$this->view->form->isValid( array_merge( $_POST['page'], $_POST['menu'] ) ) ) {
-            return;
-        }
-
-        $error = false;
-        try {
-            $page = new Page();
-            $pageID = $page->updatePage( $_POST['page'], $_POST['menu'] );
-        } catch( Exception $e ) {
-            $message = $e->getMessage();
-            $error = true;
-        }
-
-        if ( $error ) {
-            $this->_flash( '/admin/pages', $message );           
-        }
-        $this->_flash( '/admin/pages/view/' . $pageID, 'Poprawnie dodana strona statyczna' );
+        $this->create();
     }
 
-    public function viewAction() {}
+    public function viewAction() {
+        $this->view->page = $this->view();
+    }
     public function editAction() {
-        $pageID = (int)$this->_getParam( 'id' );
-        if ( !$pageID ) {
-            $this->_redirect( '/admin/pages' );
-        }
-        $this->view->page = Page::getById( $pageID );
-
-        if ( !$this->view->page ) {
-            $this->_redirect( '/admin/pages' );
-        }
-
-        $this->view->form = $this->formPages( 'edit' );
-        $this->view->form->setAction( '/admin/pages/edit/' . $pageID );
-        $this->view->form->setDefaults( (array)$this->view->page->_data );
         $this->view->menuItems = $this->getMenuItems();
         $this->view->menuItemsWithoutPages = $this->getMenuItems();
-
-        if ( !$_POST or !$this->getRequest()->isPost() ) {
-            return;
-        }
-
-        if ( !$this->view->form->isValid( array_merge( $_POST['page'], $_POST['menu'] ) ) ) {
-            return;
-        }
-
-        $error = false;
-        try {
-            $pageID = $this->view->page->updatePage( $_POST['page'], $_POST['menu'] );
-        } catch( Exception $e ) {
-            $message = $e->getMessage();
-            $error = true;
-        }
-
-        if ( $error ) {
-            $this->_flash( '/admin/pages', $message );           
-        }
-        $this->_flash( '/admin/pages/view/' . $pageID, 'Poprawnie dodane zmiany na stronie' );
+        $this->edit();
+        $this->view->page = $this->getEntity();
     }
     public function deleteAction() {
          $pageId = (int)$this->_getParam( 'id' );

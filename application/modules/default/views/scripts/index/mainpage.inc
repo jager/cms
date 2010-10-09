@@ -1,24 +1,27 @@
+<div id="content">
+    <div id="home-description">
 <?php 
-    $this->headScript()->appendFile( '/js/mainpage.js');
-    echo $this->partial( 'elements/slider.inc');
+    $countArt = sizeof( $this->articles );
+    if ( $countArt > 0 ) {
+        echo $this->partial( 'elements/mainpage_first_article.inc', array( 'article' => $this->articles[0] ) );
+        unset( $this->articles[0] );
+    }
 ?>
-
-<!-- end slider -->
-
-
-<div class="single-third-width-column">
-    <h3>Aktualności</h3>
-    <?php echo $this->partial( 'elements/mainpage_actuals.inc', array( 'aktual' => $this->aktual ) ); ?>
+    </div>
+    <div id="home-widget-area">
+<?php
+    echo isset( $this->pageContent->content ) ? $this->pageContent->content : null;
+    //Zend_Debug::dump($this->articles);
+?>
+    </div>
 </div>
-
-<div class="single-third-width-column">
-    <h3>Terminarz turniejowy</h3>
-    <?php echo $this->partial( 'elements/mainpage_tours.inc', array( 'tours' => $this->tournaments ) ); ?>
-</div>
-
-<div class="single-third-width-last-column">
-    <h3>Ranking mężczyzn</h3>
-        <?php echo $this->partial( 'elements/mainpage_rank.inc', array( 'rank' => isset( $this->rank['male'] ) ? $this->rank['male'] : array(), 'more' => true ) ); ?>
-    <h3>Ranking kobiet</h3>
-        <?php echo $this->partial( 'elements/mainpage_rank.inc', array( 'rank' => isset( $this->rank['female'] ) ? $this->rank['female'] : array(), 'more' => true ) ); ?>
+<div id="sidebar">
+    <div class="widget">
+        <h2>Aktualności ze szkoły</h2>
+    <?php
+        if ( $countArt > 0 ) {
+        echo $this->partial( 'elements/sidebar_articles.inc', array( 'articles' => $this->articles ) );
+    }
+    ?>
+    </div>
 </div>

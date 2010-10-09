@@ -42,7 +42,11 @@ abstract class BaseGalery extends Doctrine_Record
              'notnull' => true,
              'length' => '4',
              ));
-
+        $this->hasColumn('publishtype', 'string', 1, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => '1',
+             ));
         $this->option('collate', 'utf8_polish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'MyISAM');

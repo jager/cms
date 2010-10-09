@@ -18,7 +18,7 @@ class Page extends BasePage
                 ->from( 'Page' );
     }
 
-    public static function getById( $id ) {
+    public function getById( $id ) {
         return Doctrine_Core::getTable( 'Page' )->find( $id );
     }
 
@@ -38,7 +38,9 @@ class Page extends BasePage
         return Doctrine_Core::getTable( 'Page' )->findByPname( $pname )->count() > 0 ? true : false;
     }
 
-    public function updatePage( $aData, $aMenuData ) {
+    public function create( $aPostData ) {
+        $aData = $aPostData['page'];
+        $aMenuData = $aPostData['menu'];
         $content = trim( stripslashes( $aData['content'] ) );
         if ( isset( $aData['id'] ) ) {
             $this->id = $aData['id'];
@@ -57,10 +59,12 @@ class Page extends BasePage
         $this->content = $content;
         $this->active = $aData['active'];
         $this->owner = Zend_Auth::getInstance()->getIdentity()->username;
+        $this->template = isset( $aData['template'] ) ? $aData['template'] : null;
         $this->save();
 
         if ( $aData['menuitem'] == '0' ) {
-            if ( is_array( $aMenuData ) and ( $aMenuData['mname'] != '' ) ) {
+            if ( is_array( $aMenuData ) and ( $aMenuData['mname'] != '0' ) ) {
+                $aMenuData['mname'] = $this->pname;
                 $aMenuData['active'] = $aData['active'];
                 $aMenuData['Pages_id'] = $this->id;
                 $aMenuData['link'] = '/pages/' . $this->link;
@@ -68,7 +72,7 @@ class Page extends BasePage
                 $menu->updateMenu( $aMenuData );
             }
         } else {
-            $menu = Menu::getMenu( $aData['menuitem'] );
+            $menu = Menu::getById( $aData['menuitem'] );
             if ( $menu->Pages_id > 0 ) {
                 $oldMenu = Menu::getMenusByPageId( $this->id );
                 if ( $oldMenu ) {

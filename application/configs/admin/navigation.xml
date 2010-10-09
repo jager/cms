@@ -4,31 +4,32 @@
 		<home>
 			<label>Strona główna</label>
 			<uri>/admin</uri>
+                        <privilege>moderator</privilege>
 		</home>
+                <user>
+                    <label>Użytkownicy</label>
+                    <uri>/admin/user</uri>
+                    <privilege>admin</privilege>
+                </user>
                 <news>
                     <label>Aktualności</label>
                     <uri>/admin/actuals</uri>
+                    <privilege>moderator</privilege>
                 </news>
-		<players>
-			<label>Zawodnicy</label>
-			<uri>/admin/players</uri>
-		</players>
-		<tournaments>
-			<label>Turnieje</label>
-			<uri>/admin/tournaments</uri>
-		</tournaments>
-		<ranks>
-			<label>Ranking</label>
-			<uri>/admin/ranks</uri>
-		</ranks>
-                <foto>
-                    <label>Galerie zdjęć</label>
-                    <uri>/admin/foto</uri>
-                </foto>
-                <pages>
+		<pages>
                     <label>Strony statyczne</label>
                     <uri>/admin/pages</uri>
+                    <privilege>moderator</privilege>
                 </pages>
-
+                <foto>
+                    <label>Galerie zdjęć</label>
+                    <uri>/admin/galery</uri>
+                    <privilege>moderator</privilege>
+                </foto>
+                <file>
+                    <label>Pliki</label>
+                    <uri>/admin/file</uri>
+                    <privilege>moderator</privilege>
+                </file>
 	</nav>
 </configdata>

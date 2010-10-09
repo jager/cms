@@ -1,5 +1,8 @@
-<div class="select">
-    <label for="menuItemParentId"><?php echo $this->selectLabel; ?></label>
+<div class="field">
+    <div class="label">
+        <label for="<?php echo $this->idElement ?>"><?php echo $this->selectLabel; ?></label>
+    </div>
+    <div class="select">
 <?php
     $menuItems = array( "0" => "--proszę wybrać element--" );
     if ( sizeof( $this->menuItems ) > 0 ):
@@ -10,4 +13,5 @@
     $selected = isset( $this->selectedItem ) ? $this->selectedItem : null;
     echo $this->formSelect( $this->menuItemName, $selected, array( 'id' => $this->idElement ), $menuItems );
 ?>
+    </div>
 </div>

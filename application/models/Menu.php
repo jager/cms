@@ -16,6 +16,14 @@ class Menu extends BaseMenu
         return Doctrine_Core::getTable( 'Menu' )->findAll();
     }
 
+    public static function findList() {
+        return Doctrine_Query::create()
+                ->select( 'id, mname, type, link, parent_id, active, pages_id, ord')
+                ->from( 'Menu' )
+                ->where('parent_id = 0 or parent_id = 1')
+                ->orderBy('ord');
+    }
+
     public static function getMenusByPageId( $pageID ) {
         return Doctrine_Core::getTable( 'Menu' )->findOneByPages_id( $pageID );
     }
@@ -51,6 +59,7 @@ class Menu extends BaseMenu
         $xNav = $xReturn->addChild( 'nav' );
         foreach( $query as $s ) {
             $xNode = $xNav->addChild( "page_{$s->id}" );
+            
             $xNode->addChild( 'label', $s->mname );
             $xNode->addChild( 'uri', $s->link );
             $children = $s->getChildren( '1' );
@@ -71,7 +80,7 @@ class Menu extends BaseMenu
                     }
                 }
             }
-        }
+        }        
         return $xReturn->asXML();
     }
 
@@ -121,7 +130,7 @@ class Menu extends BaseMenu
         return $aReturn;
     }
 
-    public static function getMenu( $id ) {
+    public static function getById( $id ) {
         return Doctrine_Core::getTable( 'Menu' )->find( $id );
     }
 

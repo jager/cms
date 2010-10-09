@@ -12,5 +12,26 @@
  */
 class Galery extends BaseGalery
 {
+    public function create( $aData ) {
+        if ( isset( $aData['id'] ) ) {
+            $this->id = $aData[ 'id' ];
+        }
+        $this->gname            = $aData[ 'gname' ];
+        $this->gdescription     = $aData['gdescription'];
+        $this->owner            = ( isset( $aData['owner'] ) and ( $aData['owner'] != '' ) ) ? $aData['owner'] : 0;
+        $this->publishtype      = $aData['publishtype'];
+        $this->save();
+        return $this->getIncremented();
+    }
 
+    public function getById( $id ) {
+        return $this->getTable()->find( $id );
+    }
+
+    public static function findList() {
+        return Doctrine_Query::create()
+                ->select( 'id, gname, gdescription, owner, publishtype')
+                ->from( 'Galery' )
+                ->orderBy( 'id desc');
+    }
 }

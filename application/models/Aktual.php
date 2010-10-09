@@ -23,10 +23,18 @@ class Aktual extends BaseAktual
         return Doctrine_Query::create()
                 ->select( 'id, title, shortcontent, edited')
                 ->from( 'Aktual' )
-                ->where( "active = '1'" )
+                ->where( "active = '1' and ( published is null or published < now() )" )
                 ->orderBy( 'edited DESC' )
                 ->limit( $limit )
                 ->execute();
+    }
+
+    public static function findForFrontPage() {
+        return Doctrine_Query::create()
+                ->select()
+                ->from( 'Aktual' )
+                ->where( "active = '1' and ( published is null or published < now() )" )
+                ->orderBy( 'edited DESC' );
     }
 
     public function getLabels() {
@@ -61,7 +69,7 @@ class Aktual extends BaseAktual
             ->select( 'a.*')
             ->from( 'Aktual a' )
             ->leftJoin( 'a.AktualsLabels l' )
-            ->where( 'l.Labels_id = ?', $id )
+            ->where( "l.Labels_id = ? and a.active = '1' and ( a.published is null or a.published < now() )", $id )
             ->execute();
     }
 

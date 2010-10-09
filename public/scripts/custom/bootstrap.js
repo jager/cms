@@ -8,5 +8,12 @@ $(document).ready(function() {
                 $( this ).validate();
         });
     }
+
+    $("#published").datepicker({
+        showOn: 'button',
+        buttonImage: 'resources/images/calendar.gif',
+        buttonImageOnly: true
+    });
+
 });
 

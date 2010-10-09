@@ -14,18 +14,21 @@ class AktualsController extends Webbers_Controller_Action {
 
     public function indexAction() {
         $this->view->labels = Label::getLabelsArr();
-        $this->view->showAllLink = false;
+        $page = (int)$this->_getParam( 'page' );
+        $paginator = Webbers_Search::factory( Aktual::findForFrontPage() );
+        $paginator->setItemCountPerPage( 5 );
+        $paginator->setCurrentPageNumber( $page );
+        $this->view->articles = $paginator;
     }
 
     public function viewAction() {
         $link = $this->_getParam( 'link' );
-        $this->view->actuals = Aktual::getByLink( $link );
-        if ( !isset( $link ) or ( $link == '' ) ) {
-            $this->view->labels = Label::getLabelsArr();
-            $this->view->showAllLink = false;
-            $this->render( 'index' );
-            return;
-        }        
+        if ( is_numeric( $link ) ) {
+            $this->_forward("index", "aktuals", "default", array( "page" => (int)$link) );
+        } else {
+            $this->view->actuals = Aktual::getByLink( $link );
+            $this->view->sidebarArticles = Aktual::findForFrontPage()->limit(5)->execute();
+        }
     }
 
     public function labelslistAction() {

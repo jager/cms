@@ -71,7 +71,10 @@ abstract class BasePage extends Doctrine_Record
              'type' => 'string',
              'length' => '30',
              ));
-
+        $this->hasColumn('template', 'string', 100, array(
+             'type' => 'string',
+             'length' => '100',
+             ));
         $this->option('collate', 'utf8_polish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'MyISAM');

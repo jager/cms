@@ -43,4 +43,32 @@ class Adminuser extends BaseAdminuser {
             $adminuser->loginamount = $adminuser->loginamount + 1;
             $adminuser->save();
     }
+
+    public function getById( $id ) {
+        return $this->getTable()->find( $id );
+    }
+
+    public function create( $data ) {
+        unset( $data['repassword'] );
+
+        if ( isset( $data['id'] ) and ( $data['id'] != '' ) ) {
+            $this->id = $data['id'];
+        }
+        $this->fname = $data['fname'];
+        $this->sname = $data['sname'];
+        $this->mailadr = $data['mailadr'];
+        $this->username = $data['username'];
+        $this->edited = new Doctrine_Expression('NOW()');
+        if ( trim( $data['password'] ) != '' ) {
+            $this->password = md5( trim( $data['password'] ) );
+        }
+        $this->save();
+    }
+
+    public function findList() {
+        return Doctrine_Query::create()
+                ->select()
+                ->from( 'Adminuser' )
+                ->orderBy( 'sname asc');
+    }
 }

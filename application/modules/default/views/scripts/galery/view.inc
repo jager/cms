@@ -1,35 +1,25 @@
-<?php
-    $this->headScript()->appendFile( '/js/jquery.prettyPhoto.js');
-    $this->headLink()->appendStylesheet( '/css/prettyPhoto.css' );
-    $this->headScript()->appendFile( '/js/viewGalery.js');
-?>
-<div id="breadcrumbPanel">
-<?php
-    echo $this->breadcrumbLinks(
-            array(
-                array( 'href' => '/', 'text' => 'Home' ),
-                array( 'href' => '/galerie', 'text' => 'Galerie zdjęć' ),
-                array( 'href' => '/galerie/' . $this->galery->id, 'text' => $this->galery->gname )
-            ), '/'
-            );
-?>
-</div>
+<div id="full-width-content">
 <h3><?php echo $this->galery->gname; ?></h3>
 <p><?php echo $this->galery->gdescription; ?></p>
-<div id="portfolio-content">
+
 <?php
     if ( sizeof( $this->aFotos ) > 0 ):
+        $i = 0;
         foreach( $this->aFotos as $foto ):
+            $i++;
             $path = '/var/gallery' . DS . $this->galery->id . DS . 'min';
             $pathFull = '/var/gallery' . DS . $this->galery->id;
 ?>
-    <div class="portfolio-item">
-        <a class="portfolio-item-image"  rel="prettyPhoto[gallery1]" href="<?php echo $pathFull . DS . $foto->sourcename ?>" >
-            <img src="<?php echo $path . DS . $foto->sourcename ?>" alt="" />
-        </a>       
+    <div class="portfolio-box">
+        <a rel="gallery" class="lightbox thumb" href="<?php echo $pathFull . DS . $foto->sourcename ?>">
+                <img alt="" src="<?php echo $path . DS . $foto->sourcename ?>" style="opacity: 1;">
+        </a>
         <p><?php echo $foto->description; ?></p>
-    </div><!-- end portfolio-item -->
+    </div>
 <?php
+            if ( ($i % 3) ==  0 ):
+                echo "<div class='clear'></div>";
+            endif;
         endforeach;
     else:
 ?>

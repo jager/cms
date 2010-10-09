@@ -1,41 +1,43 @@
-<div id="slider">
-        <div id="slider-image-shadow"></div>
-        <ul>
-                <li>
-                        <a class="slider-link-current" href="http://www.siatka-lodzkie.org" title="Zobacz stronę Klubu Sympatyków Piłki Siatkowej"><span class="slider-link">Klub Sympatyków Piłki Siatkowej</span>
-                                <img class="slider-image slider-image-current" alt="Klub Sympatyków Piłki Siatkowej" src="img/slider/5.jpg"/>
-                                <span class="slider-caption slider-caption-current"></span>
-                        </a>
-                </li>
-                <li>
-                        <a href="http://tkkf-dzikusy.prv.pl/" title="TKKF Dzikusy"><span class="slider-link">TKKF Dzikusy</span>
-                                <img class="slider-image" alt="Lorem ipsum" src="img/slider/9.jpg"/>
-                                <span class="slider-caption"></span>
-                        </a>
-                </li>
-                <li>
-                        <a href="http://www.manufaktura.com/" title="Przejdź na stronę łódzkiej Manufaktury"><span class="slider-link">Manufaktura</span>
-                                <img class="slider-image" alt="Lorem ipsum" src="img/slider/7.jpg"/>
-                                <span class="slider-caption"></span>
-                        </a>
-                </li>
-                <li>
-                        <a href="http://plazowka-lodz.info/turnieje" title="Zobacz harmonogram turniejów"><span class="slider-link">Harmonogram turniejów</span>
-                                <img class="slider-image" alt="Lorem ipsum" src="img/slider/8.jpg"/>
-                                <span class="slider-caption"></span>
-                        </a>
-                </li>
-                <li>
-                        <a href="/pages/zgloszenia.html" title="Zgłoś się do turnieju"><span class="slider-link">Zgłoszenia do turniejów</span>
-                                <img class="slider-image" alt="Zgłoś się do turnieju" src="img/slider/6.jpg"/>
-                                <span class="slider-caption"></span>
-                        </a>
-                </li>
-        </ul>
+<?php 
+    $aParams = Zend_Controller_Front::getInstance()->getRequest()->getParams();
+    if ( ( ( $aParams['controller'] == 'index' ) and ( $aParams['action'] == 'index' ) ) or
+         ( ( $aParams['controller'] == 'index' ) and ( $aParams['action'] == 'view' ) and ( $aParams['page'] == 'home.html' ) ) ) {
+?>
+<!-- HOMEPAGE SLIDESHOW (start) -->
+<script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#slideshow').cycle({
+                fx:     'scrollLeft',
+                timeout: 6000,
+                pager:  '#slideshow-nav-inner',
+                pagerAnchorBuilder: paginate,
+                speed:  '2000',
+                easing: 'easeInOutQuint'
+            });
 
-        <div id="slider-time-line">
-                <div id="slider-time-line-current">
-                </div>
-        </div>
+        });
 
-</div>
+</script>
+
+<div id="slideshow-wrapper">
+        <div id="slideshow">
+                <div><a href="/" ><img src="/default/css/images/baner1.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner2.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner3.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner4.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner5.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner6.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner7.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner8.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner9.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner10.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner11.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner12.jpg" alt="" /></a></div>
+                <div><a href="/" ><img src="/default/css/images/baner13.jpg" alt="" /></a></div>
+        </div><!-- #slideshow (end) -->
+        <div id="slideshow-nav" class="ie6">
+                <div id="slideshow-nav-inner"></div>
+        </div><!-- #slideshow-nav(end) -->
+</div><!-- #slideshow-wrapper (end) -->
+<?php } ?>
+<!-- HOMEPAGE SLIDESHOW (end) -->

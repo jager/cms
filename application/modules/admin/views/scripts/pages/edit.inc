@@ -1,16 +1,6 @@
 <?php
-    $this->headScript()->appendFile("/js/tiny_mce/tiny_mce.js");
-    $this->headScript()->appendFile("/js/editPage.js");
-    $title = "Edytujesz stronę: {$this->page->pname}";
-    $id = "editPage{$this->page->id}"
-?>
-<div class="mainBox">
-    <ul>
-        <li><a href="#<?php echo $id; ?>"><?php echo $title; ?></a></li>
-    </ul>
-    <div id="<?php echo $id; ?>">
-<?php
-
+    $this->placeholder('title')->set( 'Strony statyczne' );
+    $this->placeholder('links')->set( $this->partial( 'elements/pages/buttons.inc' ) );
                         $this->form->getElement( 'menuitem' )->setValue(
                             $this->partial( 'elements/menu/selectmenuitems.inc',
                                     array( 'menuItems' => $this->menuItemsWithoutPages,
@@ -29,6 +19,3 @@
                         );
 
                         echo $this->form;
-?>
-    </div>
-</div>

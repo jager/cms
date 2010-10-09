@@ -20,5 +20,9 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
 		$conn->setAttribute( Doctrine::ATTR_USE_NATIVE_ENUM, true );
 		return $conn;
 	}
+
+        protected function _initActionhelpers() {
+            Zend_Controller_Action_HelperBroker::addPrefix( 'Webbers_Controller_Action_Helper' );
+        }
 }
 

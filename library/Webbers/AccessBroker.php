@@ -2,6 +2,7 @@
 class Webbers_AccessBroker {
 	
 	private $isAuthorized = false;
+        private $acl;
 	
 	public function __construct( Zend_Controller_Request_Abstract $request ) {
 		$moduleName 		= $request->getModuleName();
@@ -13,24 +14,26 @@ class Webbers_AccessBroker {
 		} catch ( Exception $e ) {
 			$access = 'public';
 		}
-
+                $this->acl = new Webbers_Acl();
 		$this->isAuthorized = $this->auth( $access );
 	}
 	
-	public function isAllowed() {
-		return $this->isAuthorized;
+	public function isAllowed( $resource = null ) {
+            if ( $resource === null ) {
+                return $this->isAuthorized;
+            } else {
+                return $this->auth( $resource );
+            }
 	}
 	
 	private function auth( $access ) {
-                if ( $access == 'public' ) {
-			return true;
-		}
 		if ( Zend_Auth::getInstance()->hasIdentity() ) {
-                    return true;
+                    $role = Zend_Auth::getInstance()->getIdentity()->role;
 		} else {
-                    return false;
+                    $role = Webbers_Roles::GUEST;
 		}
-		
+                         
+                return $this->acl->isAllowed( $role, $access );
 	}
 	
 	private function checkAccess( $module, $controller, $action, $params = array() ) {

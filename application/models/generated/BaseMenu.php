@@ -57,6 +57,11 @@ abstract class BaseMenu extends Doctrine_Record
              'notnull' => true,
              'length' => '4',
              ));
+        $this->hasColumn('ord', 'integer', 4, array(
+             'type' => 'integer',
+             'unsigned' => true,
+             'length' => '4',
+             ));
 
         $this->option('collate', 'utf8_polish_ci');
         $this->option('charset', 'utf8');

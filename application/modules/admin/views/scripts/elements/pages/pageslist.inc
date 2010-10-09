@@ -19,21 +19,15 @@
 
 if ( $this->list->count() > 0 ):
 	$lp = $this->list->getItemCountPerPage() * ( $this->list->getCurrentPageNumber() - 1 );
-        $aActive = array(
-            '0'      => 'Nie publikowana',
-            '1'      => 'Opublikowana'
-        );
-        
 	foreach ( $this->list as $page ):
-                $view = array( 'controller' => 'actuals', 'action' => 'view', 'id' => $page->id );
 ?>
 		<tr <?php echo $this->cycle( array( "class='light'", "class='dark'") )->next(); ?> >
 			<td><?php echo ++$lp; ?></td>
-			<td><a href="/admin/pages/view/<?php echo $page->id ?>" class="noBox"><?php echo $page->pname ?></a></td>
-			<td><?php echo $page->created ?></td>
+                        <td class="title"><a href="/admin/pages/edit/<?php echo $page->id ?>" class="noBox"><?php echo $page->pname ?></a></td>
+                        <td><?php echo $page->created ?></td>
                         <td><?php echo $page->edited ? $page->edited : 'N/A' ?></td>
-			<td><?php echo isset( $aActive[$page->active] ) ? $aActive[$page->active] : '' ?></td>
-			<td>
+                        <td class="selected"><?php echo $page->active == '1' ? "<input type='checkbox' name='publish' id='publish_{$page->id}' class='publish' />" : "<input type='checkbox' name='unpublish' id='unpublish_{$page->id}' class='unpublish' />" ?></td>
+                        <td class="last">
                             <a class="edit listMenu" href="/admin/pages/edit/<?php echo $page->id ?>" >Edytuj</a>
                             <a class="delete listMenu asBox" href="/admin/pages/delete/<?php echo $page->id ?>" >Usuń</a>
 			</td>

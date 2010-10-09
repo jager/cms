@@ -1,13 +1,13 @@
 <?php
 
 class Webbers_Validate_Password extends Zend_Validate {
-    protected static $messageTooShort          = 2404;
-    protected static $messageNoDigit           = 2405;
-    protected static $messageNoUppercaseLetter = 2406;
-    protected static $messageNoLowercaseLetter = 2407;
-    protected static $messageTooWeak           = 2408;
-    protected static $messageNotUnique         = 2409;
-    protected static $messageNoSpecial         = 2410;
+    protected static $messageTooShort          = "Password is too short!";
+    protected static $messageNoDigit           = "Password is required to contain at least one digit!";
+    protected static $messageNoUppercaseLetter = "Password is required to contain at least one uppercase letter!";
+    protected static $messageNoLowercaseLetter = "Password is required to contain at least one lowercase letter!";
+    protected static $messageTooWeak           = "Password is too weak!";
+    protected static $messageNotUnique         = "Password is not unique in database!";
+    protected static $messageNoSpecial         = "Password is required to contain at least one special character!";
     protected $_stringLengthMin                = 8;
     protected $_requiredPoints                 = 22;
     /**

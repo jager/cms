@@ -1,3 +1,7 @@
+<div id="full-width-content">
+    <div class="pad">
 <?php
-    echo $this->navigation();
-    echo isset( $this->pageContent->content ) ? $this->pageContent->content : null              ;
+    echo isset( $this->pageContent->content ) ? $this->pageContent->content : null;
+?>
+    </div>
+</div>
