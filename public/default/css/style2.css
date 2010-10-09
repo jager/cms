@@ -1,0 +1,277 @@
+body {
+	background-image: url(style2/body-bg.png);
+	background-color: #2d2d2d;
+	color: #474747;
+}
+
+/* STANDARD TYPOGRAPHY */
+
+a {
+	color: #b30000;
+}
+
+#content blockquote, #full-width-content blockquote {
+	border-left-color: #c6c6c6;
+}
+
+#content li, #full-width-content li {
+	background-image: url('style2/bullet.png');
+}
+
+#content img, #full-width-content img {
+	border-color: #c6c6c6;
+	background-color: #f2f2f2;
+}
+
+/* LAYOUT */
+
+#menu-wrapper {
+	background-image: url(style2/menu-bg.png);
+}
+
+#main {
+	border-color: #000000;
+}
+
+#primary {
+	background-image: url(style2/primary-bg.png);
+	background-color: #fff;
+}
+
+#copyright {
+	background-image: url(style2/footer-bg.png);
+	color: #969696;
+}
+
+
+/* HEADER */
+
+#logo {
+	background-image: url(style2/logo.png);
+}
+
+/* MAIN MENU */
+
+#menu a {
+	color: #a7a7a7;
+}
+
+#menu a:hover, #menu a.menu-home:hover {
+	background-image: url(style2/menu-bg.png);
+}
+
+#menu li {
+	background-image: url(style2/menu-divider.png);
+}
+
+#menu li ul {
+	background: #2d2d2d;
+	border-top: 1px solid #2d2d2d;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	margin-left: -2px;
+}
+
+#menu li ul ul {
+	border: 1px solid #000000;
+}
+
+#menu li li a:focus, #menu li li a:hover, #menu li li a:active {
+	background: #252525;
+}
+
+#menu li li a, #menu li li a:visited {
+	color: #a7a7a7;
+}
+
+.sf-sub-indicator {
+	background-image: url('style2/arrows.png'); /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+
+
+/* SEARCH */
+
+#searchform div {
+	border-color: #292929;
+	background-color: #4a4a4a;
+	background-image: url(style2/search-input-bg.png);
+}
+
+#search-input {
+	color: #a7a7a7;
+}
+
+#searchsubmit {
+	background-image: url(style2/search-submit.png);
+}
+
+/* BLOG */
+
+#content .entry h3 a {
+	color: #474747;
+}
+
+#content .entry h3 a:hover {
+	color: #000000;
+}
+
+/* COMMENTS */
+
+a.name {
+	color: #474747;
+}
+
+a.name:hover {
+	color: #000000;
+}
+
+#respond input, #respond textarea {
+	background-color: #ffffff;
+	color: #666;
+	border: 1px solid #cccccc;
+}
+
+#respond #submit {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+#respond #submit:hover {
+	background-color: #f2f2f2;
+}
+	
+/* NEWS PAGE */
+
+.news-article h2 a, .featured-news h2 a {
+	color: #474747;
+
+}
+
+.news-article h2 a:hover, .featured-news h2 a:hover {
+	color: #000000;
+}
+
+/* PORTFOLIO PAGE */
+
+#full-width-content .portfolio-box h3 a {
+	color: #474747;
+}
+
+#full-width-content .portfolio-box h3 a:hover {
+	color: #000000;
+}
+
+/* CONTACT FORM */
+
+#contact input, #contact textarea {
+	background-color: #ffffff;
+	color: #666;
+	border: 1px solid #cccccc;
+}
+
+#contact #submit {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+#contact #submit:hover {
+	background-color: #f2f2f2;
+}
+
+/* FOOTER AREA */
+
+#footer-top {
+	background-image: url(style2/footer-top-bg.png);
+	background-color: #ffffff;
+}
+
+#footer-widget-area {
+	background-image: url(style2/footer-widget-area-bg.png);
+	background-color: #202020;
+	color: #a7a7a7;
+}
+
+#footer-widget-area a {
+	color: #ffffff;
+}
+
+#footer-widget-area a:hover {
+	text-decoration: underline;
+}
+
+#footer-widget-area-inner {
+	background-image: url(style2/footer-widget-area-inner-bg.png);
+}
+
+/* SIDEBAR */
+
+#sidebar .widget a {
+	color: #b30000;
+}
+
+#sidebar .widget ul {
+	border-bottom-color: #cccccc;
+}
+
+#sidebar .widget li {
+	border-top-color: #cccccc;
+	background-image: url('style2/bullet.png');
+}
+
+#sidebar .widget li a {
+	color: #474747;
+}
+
+#sidebar .widget li a:hover {
+	color: #b30000;
+}
+
+
+/* SLIDESHOW */
+
+#slideshow {
+	background-color: #f2f2f2;
+}
+
+#slideshow-nav {
+	background-image: url(style2/slideshow-nav.png)
+}
+
+#slideshow-nav-inner a img {
+	background-image: url(style2/slideshow-nav-button.png);
+}
+
+/* Jaybich Recent Posts Widget */
+
+ul.jaybich-recent-posts li a, ul.jaybich-recent-posts li a span {
+	color: #a7a7a7;
+}	
+
+/* Jaybich Simple Contact Widget */
+
+ul.jaybich-simple-contact li {
+	background-image: url(style2/icons-contact.png);
+}
+
+#footer-widget-area .widget ul.jaybich-simple-contact li a, ul.jaybich-simple-contact li a {
+	color: #a7a7a7;
+}
+
+/* PAGE NAVI PLUGIN */
+
+#full-width-content .wp-pagenavi a, #content .wp-pagenavi a {
+	border: 1px solid #cccccc;
+	color: #474747;	
+}
+
+#full-width-content .wp-pagenavi a:hover, #content .wp-pagenavi a:hover {	
+	border: 1px solid #cccccc;
+	background-color: #f2f2f2;
+}
+
+#full-width-content .wp-pagenavi span.current, #content .wp-pagenavi span.current {
+	border: 1px solid #cccccc;
+	color: #474747;
+	background-color: #f2f2f2;
+}

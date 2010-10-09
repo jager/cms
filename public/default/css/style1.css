@@ -1,0 +1,264 @@
+body {
+	background-image: url(style1/body-bg.png);
+	background-color: #f3f3f3;
+	color: #474747;
+}
+
+/* STANDARD TYPOGRAPHY */
+
+a {
+	color: #1095d2;
+}
+
+#content blockquote, #full-width-content blockquote {
+	border-left-color: #c6c6c6;
+}
+
+#content li, #full-width-content li {
+	background-image: url('style1/bullet.png');
+}
+
+#content img, #full-width-content img {
+	border-color: #c6c6c6;
+	background-color: #f2f2f2;
+}
+
+/* LAYOUT */
+
+#menu-wrapper {
+	background-image: url(style1/menu-bg.png);
+}
+
+#main {
+	border-color: #c6c6c6;
+}
+
+#primary {
+	background-image: url(style1/primary-bg.png);
+	background-color: #fff;
+}
+
+#copyright {
+	background-image: url(style1/footer-bg.png);
+	color: #969696;
+}
+
+
+/* HEADER */
+
+#logo {
+	background-image: url(style1/logo.png);
+}
+
+/* MAIN MENU */
+
+#menu a {
+	color: #666666;
+}
+
+#menu a:hover, #menu a.menu-home:hover {
+	background-image: url(style1/menu-bg.png);
+}
+
+#menu li {
+	background-image: url(style1/menu-divider.png);
+}
+
+#menu li ul {
+	background: #ffffff;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #c6c6c6;
+	border-right: 1px solid #c6c6c6;
+	border-left: 1px solid #c6c6c6;
+	margin-left: -2px;
+}
+
+#menu li ul ul {
+	border: 1px solid #c6c6c6;
+}
+
+#menu li li a:focus, #menu li li a:hover, #menu li li a:active {
+	background: #f2f2f2;
+}
+
+#menu li li a, #menu li li a:visited {
+	color: #666666;
+}
+
+.sf-sub-indicator {
+	background-image: url('style1/arrows.png'); /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+
+
+/* SEARCH */
+
+#searchform div {
+	border-color: #c6c6c6;
+	background-color: #ffffff;
+	background-image: url(style1/search-input-bg.png);
+}
+
+#search-input {
+	color: #666;
+}
+
+#searchsubmit {
+	background-image: url(style1/search-submit.png);
+}
+
+/* BLOG */
+
+#content .entry h3 a {
+	color: #474747;
+}
+
+#content .entry h3 a:hover {
+	color: #000000;
+}
+
+/* COMMENTS */
+
+a.name {
+	color: #474747;
+}
+
+a.name:hover {
+	color: #000000;
+}
+
+#respond input, #respond textarea {
+	background-color: #ffffff;
+	color: #666;
+	border: 1px solid #cccccc;
+}
+
+#respond #submit {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+#respond #submit:hover {
+	background-color: #f2f2f2;
+}
+	
+/* NEWS PAGE */
+
+.news-article h2 a, .featured-news h2 a {
+	color: #474747;
+
+}
+
+.news-article h2 a:hover, .featured-news h2 a:hover {
+	color: #000000;
+}
+
+/* PORTFOLIO PAGE */
+
+#full-width-content .portfolio-box h3 a {
+	color: #474747;
+}
+
+#full-width-content .portfolio-box h3 a:hover {
+	color: #000000;
+}
+
+/* CONTACT FORM */
+
+#contact input, #contact textarea {
+	background-color: #ffffff;
+	color: #666;
+	border: 1px solid #cccccc;
+}
+
+#contact #submit {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+#contact #submit:hover {
+	background-color: #f2f2f2;
+}
+
+/* FOOTER AREA */
+
+#footer-top {
+	background-image: url(style1/footer-top-bg.png);
+	background-color: #fff;
+}
+
+#footer-widget-area {
+	background-image: url(style1/footer-widget-area-bg.png);
+	background-color: #e4e4e4;
+}
+
+#footer-widget-area-inner {
+	background-image: url(style1/footer-widget-area-inner-bg.png);
+}
+
+/* SIDEBAR */
+
+#sidebar .widget a {
+	color: #1095d2;
+}
+
+#sidebar .widget ul {
+	border-bottom-color: #cccccc;
+}
+
+#sidebar .widget li {
+	border-top-color: #cccccc;
+	background-image: url('style1/bullet.png');
+}
+
+#sidebar .widget li a {
+	color: #474747;
+}
+
+#sidebar .widget li a:hover {
+	color: #1095d2;
+}
+
+
+/* SLIDESHOW */
+
+#slideshow {
+	background-color: #f2f2f2;
+}
+
+#slideshow-nav {
+	background-image: url(style1/slideshow-nav.png)
+}
+
+#slideshow-nav-inner a img {
+	background-image: url(style1/slideshow-nav-button.png);
+}
+
+/* Jaybich Recent Posts Widget */
+
+ul.jaybich-recent-posts li a, ul.jaybich-recent-posts li a span {
+	color: #474747;
+}	
+
+/* Jaybich Simple Contact Widget */
+
+ul.jaybich-simple-contact li {
+	background-image: url(style1/icons-contact.png);
+}
+
+/* PAGE NAVI PLUGIN */
+
+#full-width-content .wp-pagenavi a, #content .wp-pagenavi a {
+	border: 1px solid #cccccc;
+	color: #474747;	
+}
+
+#full-width-content .wp-pagenavi a:hover, #content .wp-pagenavi a:hover {	
+	border: 1px solid #cccccc;
+	background-color: #f2f2f2;
+}
+
+#full-width-content .wp-pagenavi span.current, #content .wp-pagenavi span.current {
+	border: 1px solid #cccccc;
+	color: #474747;
+	background-color: #f2f2f2;
+}

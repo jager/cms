@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<style type="text/css">
+body { padding: 0px; margin:0px; width:100%; text-align:center; background-color: #afc5d3;}
+table { font-size:11px; border: 0px; padding:0px; margin: 0; border-collapse: collapse; border-spacing: 0px; text-align: left; width: 570px; font-family: "Helvetica CS", Tahoma, Arial, Verdana, Sans-serif; color: #333333; }
+a { text-decoration: underline; color: white }
+a:hover { text-decoration: none }
+img.logo { border: none; text-align:right }
+ul { margin: 8px 0px 8px 19px; text-align: left; list-style-type: disc; padding: 0px; }
+ul li { margin: 4px 0px; }
+ .belka_1 { font-size: 10px; color: #ffffff; background-color: #0099CC; text-align: right; font-weight:bold; padding:5px }
+ .belka_2 { font-size: inherit; color: #ffffff; background-color: #336699; text-align: right; font-weight:bold; padding:5px 10px }
+ .belka_2b { font-size: 16px; color: #ffffff; background-color: #336699; text-align: center; font-weight:bold; padding:5px }
+ .belka_4 { font-size: inherit; color: #FFFFFF; background-color: #0099CC; text-align: left; font-weight:bold; width:50%; padding:5px 10px }
+ .padding_1 { text-align: left; padding: 10px 10px 10px 10px; margin-bottom: 0px; margin-top: 0px; background-color: #FFFFFF; text-align:justify; }
+.tytul { font-size: 19px; margin: 15px 0px 0px 0px; text-align: center; font-weight: bold; }
+ .tytul2 { font-size: 18px; margin: 10px 0px 0px 0px; text-align: left; font-weight: bold; color: #FF8C00; }
+ .lewa_1 { width: 50%; text-align: left; padding: 10px 10px 5px 10px; margin: 0px; vertical-align: top; background-color:#FFFFFF }
+ .prawa_1 { width: 50%; text-align: left; padding: 10px 10px 0px 10px; margin: 0px; vertical-align: top; background-color:#FFFFFF; line-height: 1.7; font-size: 12px; }
+ .form_1 { color: #ffffff; background-color: #666666; text-align: center; }
+table.zamowienie { background-color: #535353; color:white; width: 95% }
+table.zamowienie td { padding:5px }
+ .dane { text-align: right; width: 30%; }
+.belka_2c1 {font-size: 12px; color: #ffffff; background-color: #336699; text-align: center; font-weight:bold; padding:5px }
+.just {text-align: justify; }
+.tytul21 {font-size: 18px; margin: 10px 0px 0px 0px; text-align: center; font-weight: bold; color: #FF8C00; }
+-->
+</style>
+<base target="_blank" />
+<title>mt2856</title></head>
+<body>
+<div style="background-color: #afc5d3; margin:0px; padding:15px 0px;">
+<center><font style="font-family:Verdana; font-size:11px; color:#000066">Je&#347;li e-mail nie wy&#347;wietla si&#281; prawid&#322;owo, kliknij<strong> <a href="http://www.mail.e-forum.pl/uploads/materialy/1198/copymail/2856.php?a=2856/10&amp;f=email">tutaj.</a></strong></font></center><br />
+
+		<center>
+		</center>
+		<div align="center">
+				<table>
+						<tr>
+								<td class="padding_1" style="padding-left:15px;"><strong>Wydawnictwo FORUM Sp&#243;&#322;ka z o.o.<br /> 60-595 Pozna&#324;,	ul. Polska 13<br /> tel. (0801) 88 44 22, (061) 66 55 800 <br /> fax (061) 66 55 888</strong><br /> KRS nr 0000037307 S&#261;d Rejonowy w Poznaniu<br /> Wydzia&#322; VIII Gospodarczy KRS<br /> NIP 781-15-51-223, Kapita&#322; zak&#322;adowy 150 000 z&#322; </td>
+
+								<td style="background-color:#FFFFFF"><img style="display:block" class="logo" alt="logo" src="http://www.e-firma.com.pl/images/logo_forum.gif" width="80" height="82" /> </td>
+						</tr>
+				</table>
+				<table>
+						<tr>
+								<td class="belka_1" colspan="2">Wiedza na us&#322;ugach rynku | <a  href="http://www.e-forum.pl/strony/1/i/44.php?list[to_id]=12687&amp;a=2856/10&amp;f=email">www.e-forum.pl</a></td>
+						</tr>
+
+				</table>
+				<table>
+						<tr>
+								<td class="belka_2" colspan="2">We wrześniowym numerze wywiad z Jerzym Szambelanem,<br />
+							    trenerem wicemistrz&oacute;w świata do lat 17 w koszyk&oacute;wce!</td>
+						</tr>
+
+				</table>
+		  <table>
+						<tr>
+						  <td class="padding_1" valign="bottom" style="text-align:justify" > Szanowni Pa&#324;stwo, <br />
+						    <br />
+						    Sport idzie do przodu. O tym, czy to Państwa zawodnik pierwszy minie linię mety, decyduje nie tylko jego talent, kondycja, przygotowanie techniczne i taktyczne, ale także koncentracja, motywacja do zwycięstwa i wiara we własne możliwości. Losy tej walki są w Państwa rękach.<br />
+						    <br />
+                            <a href="http://www.e-forum.pl/strony/1/i/44.php?list[to_id]=12687&amp;a=2856/10&amp;f=email"><img src="http://www.mail.e-forum.pl/uploads/materialy/1198/endimg/fejk4630.jpg" alt="magazyn trenera" width="107" height="150" hspace="10" vspace="5" border="0" align="left" /></a>Tymczasem w dostępnych na rynku publikacjach i czasopismach dla trener&oacute;w na pr&oacute;żno szukają Państwo nowoczesnej myśli szkoleniowej, porad psychologa sportu, czy innowacyjnych ćwiczeń, kt&oacute;re urozmaicą i uatrakcyjnią trening.<br />
+						    <br />
+						    Najwyższa pora to zmienić. Dlatego też, wychodząc naprzeciw Państwa oczekiwaniom, we wsp&oacute;łpracy z gronem uznanych trener&oacute;w, psycholog&oacute;w i lekarzy medycyny sportowej, przygotowaliśmy pierwsze na rynku czasopismo,              w kt&oacute;rym nowoczesna wiedza łączy się z praktycznym językiem sportu:<strong><br />
+						    </strong><br />
+						    <div class="tytul">MAGAZYN TRENERA
+  </div>
+<br />
+    
+    Miesięcznik pozwala m.in.:
+<ul>
+    <li><b>wdrożyć elementy treningu mentalnego do szkolenia sportowego,</b> tak aby rozpoznać potrzeby i oczekiwania oraz skutecznie motywować każdego zawodnika, budować autorytet, wzajemne zaufanie i ducha zespołu w drużynie,</li>
+    <li><b>przeprowadzić atrakcyjny dla zawodnik&oacute;w trening sprawnościowy, techniczny, taktyczny i mentalny</b> za pomocą innowacyjnych metod, form i środk&oacute;w treningowych,</li>
+    <li><b>rozwijać siłę, szybkość, wytrzymałość i koordynację zawodnik&oacute;w z wykorzystaniem nowoczesnych ćwiczeń,</b> w zależności od poziomu sprawności og&oacute;lnej, wieku i etapu szkolenia,</li>
+    <li><b>zaplanować oraz zorganizować nab&oacute;r do grupy sportowej</b> z uwzględnieniem czynnik&oacute;w warunkujących poziom sportowy i indywidualnych predyspozycji zawodnik&oacute;w,</li>
+    <li><b>stworzyć plany żywieniowe poprawiające nawodnienie organizmu i redukujące tkankę tłuszczową</b> oraz wykorzystać tę wiedzę do zmiany niekorzystnych nawyk&oacute;w żywieniowych dzieci i młodzieży.<br />
+      <br />
+    </li>
+  </ul>
+  Zapraszam do lektury załączonego materiału informacyjnego.<br />
+  <br />
+
+<div style="text-align:right">Marta Gończar<br />
+  Redaktor wydania</div>
+  <br />
+  <br />
+  <strong>PS Roczny program szkolenia sportowego - wskaz&oacute;wki dotyczące opracowania, rozkład trening&oacute;w, zawody sportowe, przykłady!</strong></td>
+
+				  </tr>
+						<tr>
+								<td class="belka_1" colspan="2">Wiedza na us&#322;ugach rynku | <a  href="http://www.e-forum.pl/strony/1/i/44.php?list[to_id]=12687&amp;a=2856/10&amp;f=email">www.e-forum.pl</a></td>
+						</tr>
+						<tr>
+								<td class="belka_3">&nbsp;</td>
+						</tr>
+
+				</table>
+				<table>
+				  <tr>
+								<td class="belka_2b" colspan="2">MAGAZYN TRENERA</td>
+				  </tr>
+				  <tr>
+				    <td class="padding_1" colspan="2"><strong>MAGAZYN TRENERA TO EFEKT PONAD ROCZNYCH KONSULTACJI Z TRENERAMI R&Oacute;ŻNYCH DYSCYPLIN SPORTOWYCH. DZIĘKUJEMY ZA OGROMNE ZAINTERESOWANIE ORAZ ZA WSZYSTKIE UWAGI I PROPOZYCJE TEMAT&Oacute;W. DZIĘKI TEMU STWORZYLIŚMY CZASOPISMO, KTORE W PEŁNI ODPOWIADA PAŃSTWA POTRZEBOM, I W KT&Oacute;RYM ZNAJDĄ PAŃSTWO NIEZAWODNY SPOS&Oacute;B NA WSZYSTKIE WYZWANIA W PRACY TRENERA SPORTU.</strong></td>
+			      </tr>
+
+           		  <tr>
+		  <td class="belka_4" colspan="2">
+
+            <div align="left">W numerze wrześniowym szczeg&oacute;lnie polecamy:</div></td>
+		</tr>
+				</table>
+				<table>
+						<tr>
+						  <td class="lewa_1"><strong>KULISY NOWOCZESNEGO TRENINGU</strong><br />
+						    <br />
+						    Dziennik trenera przepustką do lepszych wynik&oacute;w sportowych - jak go prowadzić i co w nim zapisywać<br />
+						    <br />
+						    Rozgrzewka przed treningiem - jak ją urozmaicić? Propozycje pomysł&oacute;w na ciekawą rozgrzewkę<br />
+						    <br />
+						    <strong>WARSZTAT TRENERA</strong><br />
+						    <br />
+						    Gotowy przykład rocznego programu szkolenia sportowego dla wybranej dyscypliny - rozkład trening&oacute;w, zgrupowania, zawody sportowe, roztrenowanie<br />
+						    <br />
+						    Warianty gry ofensywnej w koszyk&oacute;wce - do wykorzystania na szkolnych i klubowych zajęciach sportowych<br />
+						    <br />
+						    <strong>TRENING MENTALNY</strong><br />
+						    <br />
+						    Jak rozwijać u dzieci umiejętności radzenia sobie ze stresem i czynnikami rozpraszającymi<br />
+						    <br />
+						    Psychologia wkracza do sportu, czyli o tym, jak skutecznie budować relacje i wsp&oacute;łpracować na linii trener - zawodnik<br />
+						    <br />
+						    <strong>MEDYCYNA SPORTOWA</strong><br />
+						    <br />
+						    Praktyczne zasady kwalifikacji do uprawiania wf i sportu przez dzieci i młodzież - badania lekarskie, jakie musi przechodzić sportowiec<br />
+						    <br />
+						    <strong>AKADEMIA TRENERA</strong><br />
+						    <br />
+						    Klasa mistrzowska krok po kroku - czyli jak w praktyce wygląda proces zdobywania uprawnień trenerskich<br />
+					        <br />
+				          Jak zmieni się funkcjonowanie polskich klub&oacute;w po wejściu w życie nowej ustawy o sporcie<br />				          <br /></td>
+				  </tr>
+
+				</table>
+				<table>
+				  <tr>
+				    <td class="belka_1">Wiedza na us&#322;ugach rynku | <a  href="http://www.e-forum.pl/strony/1/i/44.php?list[to_id]=12687&amp;a=2856/10&amp;f=email">www.e-forum.pl</a></td>
+			      </tr>
+				  <tr>
+				    <td class="belka_3" colspan="2">&nbsp;</td>
+
+			      </tr>
+		  </table>
+				<table>
+				  <tr>
+								<td class="form_1" align="center"><form action="http://www.e-firma.com.pl/zamow/orders.php"	 method="get">
+												<br />
+												<div align="center" id="aaa">
+														<table class="zamowienie">
+																<tr>
+
+																		<td>
+                   <div align="center"><a href="http://www.mail.e-forum.pl/uploads/materialy/1198/copymail/2856.php?a=2856/10&amp;f=email#aaa" style="color:#FFFF00"><strong>Otw&#243;rz formularz on-line &gt;&gt;</strong></a></div>
+<br />
+<input type="hidden" name="nr_akcji" value="2856/10" />
+<input type="hidden" name="tytul" value="Magazyn trenera" />
+<input type="hidden" name="produkt" value="4630" />
+<input type="hidden" name="cena" value="229 zl" />
+<div align="center"> Zamawiam
+																						<select name="liczba_egz." style="margin:auto 10px">
+																								<option value="1" selected="selected">1</option>
+
+																								<option value="2">2</option>
+																								<option value="3">3</option>
+					  </select>
+																		  pren. czasopisma</div>
+																</td></tr>
+														</table>
+														<br /><br />
+
+														<table class="zamowienie">
+														  <tr>
+														    <td><div class="tytul21">Magazyn trenera</div>
+														      <br />
+
+                                                              <div class="just">Art. #4630, format A4, 48 stron, <strong>cena 229 zł netto</strong> za prenumeratę obejmującą 10 numer&oacute;w czasopisma. Prenumerata <strong>płatna przelewem na podstawie faktury dołączonej do pierwszego numeru</strong> (cena nie zawiera koszt&oacute;w wysyłki). Przedłużenie prenumeraty na kolejny   rok następuje automatycznie i nie wymaga odrębnego zam&oacute;wienia. Złożenie   zam&oacute;wienia jest jednoznaczne z akceptacją regulaminu sprzedaży   Wydawnictwa. Warunki sprzedaży dostępne na stronie www.e-forum.pl oraz w   siedzibie Wydawnictwa.</div>
+
+													        </td>
+													      </tr>
+												  </table>
+										    <br />
+										    <table class="zamowienie">
+										      <tr>
+										        <td  colspan="2"><strong>ZAMAWIAJ&#260;CY:</strong></td>
+									          </tr>
+
+										      <tr>
+										        <td class="dane">imi&#281; i nazwisko</td>
+										        <td><input name="imie" size="20" />
+                                                <input name="nazwisko" size="20" /></td>
+									          </tr>
+										      <tr>
+										        <td class="dane">stanowisko</td>
+										        <td><input name="stanowisko" size="40" /></td>
+
+									          </tr>
+										      <tr>
+										        <td class="dane">nazwa firmy</td>
+										        <td><input name="firma" size="40" /></td>
+									          </tr>
+										      <tr>
+										        <td class="dane">adres</td>
+										        <td><input name="adres" size="40" /></td>
+
+									          </tr>
+										      <tr>
+										        <td class="dane">kod / miejscowo&#347;&#263; </td>
+										        <td><input maxlength="6" size="7" name="kod_pocztowy" />
+										          <input 	name="miasto" size="28" /></td>
+									          </tr>
+										      <tr>
+										        <td class="dane">tel. / fax / e-mail</td>
+
+										        <td><input maxlength="20" size="8" name="telefon" />
+										          <input maxlength="20" size="8" name="fax" />
+										          /
+										          <input  name="adres_email" size="13" /></td>
+									          </tr>
+										      <tr>
+										        <td class="dane">NIP (np. 1234567890)</td>
+										        <td><input maxlength="15" name="NIP" /></td>
+									          </tr>
+
+										      <tr>
+										        <td class="dane">przedzia&#322;<br />
+										          zatrudnienia</td>
+										        <td><input  type="radio" name="Zatrudnienie" value="1-10" class="1-10"  id="a1-10" />
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <input  type="radio" name="Zatrudnienie" value="11-20" class="11-20" id="a11-20" />
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <input  type="radio" name="Zatrudnienie" value="21-50" class="21-50" id="a21-50" />
+
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <input  type="radio" name="Zatrudnienie" value="51-100"  class="51-100" id="a51-100" />
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <input  type="radio" name="Zatrudnienie" value="pow.100" class="101..." id="pow.100" />
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+										          <label  for="a1-10">1-10</label>
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <label  for="a11-20">11-20</label>
+
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <label  for="a21-50">21-50</label>
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <label  for="a51-100">51-100</label>
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <label  for="pow.100">pow. 100</label></td>
+									          </tr>
+
+										      <tr>
+										        <td class="dane">ul. / kod / miasto<br />
+										          adres dostarczenia <br />
+										          (je&#380;eli inny ni&#380; fakturowania)</td>
+										        <td><input maxlength="80" name="adres dostawy" size="40" /></td>
+									          </tr>
+
+											  <tr>
+												<td class="dane">uwagi</td>
+
+												<td><input name="uwagi" size="40" /></td>
+
+											</tr>
+										      <tr>
+										        <td colspan="2"><div align="center">
+										          <input type="submit" value="Zamawiam" name="submit" />
+
+										          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										          <input type="reset" value="Wyczyść&nbsp;pola" name="reset" />
+										          </div></td>
+									          </tr>
+										      <tr>
+										        <td class="just" colspan="2"> Wyra&#380;am 
+										          zgod&#281; na przetwarzanie moich danych osobowych przez Wydawnictwo 
+										          FORUM Sp. z o.o. z siedzib&#261; w Poznaniu, ul. Polska 13 w celach 
+										          marketingowych. Wydawnictwo zapewnia klientom prawo do wgl&#261;du i 
+										          zmiany swoich danych osobowych. Wyra&#380;am zgod&#281; na przesy&#322;anie 
+										          informacji handlowej przez Wydawnictwo FORUM Sp. z o.o. z siedzib&#261; w 
+										          Poznaniu, ul. Polska 13, za pomoc&#261; &#347;rodk&#243;w komunikacji 
+										          elektronicznej w rozumieniu ustawy o &#347;wiadczeniu us&#322;ug drog&#261; 
+										          elektroniczn&#261;.<br />
+
+										          <input  checked="checked" type="radio" name="Informacja" value="Wyrazam zgode na przetwarzanie moich danych osobowych przez Wydawnictwo FORUM Sp. z o.o. z siedziba w Poznaniu, ul. Polska 13 w celach marketingowych. Wydawnictwo zapewnia klientom prawo do wgladu i zmiany swoich danych osobowych. Wyrazam zgode na przesylanie informacji handlowej przez Wydawnictwo FORUM Sp. z o.o. z siedziba w Poznaniu, ul. Polska 13, za pomoca srodkow komunikacji elektronicznej w rozumieniu ustawy o swiadczeniu uslug droga elektroniczna." />
+										          Tak
+										          <input type="radio" name="Informacja"   value="Nie wyrazam zgody na przetwarzanie moich danych osobowych przez Wydawnictwo FORUM Sp. z o.o. z siedziba w Poznaniu, ul. Polska 13 w celach marketingowych. Nie wyrazam zgody na przesylanie informacji handlowej przez Wydawnictwo FORUM Sp. z o.o. z siedziba w Poznaniu, ul. Polska 13, za pomoca srodkow komunikacji elektronicznej w rozumieniu ustawy o swiadczeniu uslug droga elektroniczna." />
+										          Nie <br />
+										          Z&#322;o&#380;enie zam&#243;wienia jest jednoznaczne z akceptacj&#261; regulaminu sprzeda&#380;y Wydawnictwa.<br /></td>
+
+									          </tr>
+										      </table>
+							      <br /> </div>
+										</form></td>
+						</tr>
+						<tr>
+			<td class="belka_1" colspan="2">Wiedza na us&#322;ugach rynku | <a  href="http://www.e-forum.pl/strony/1/i/44.php?list[to_id]=12687&amp;a=2856/10&amp;f=email">www.e-forum.pl</a></td>
+
+		</tr>
+
+				</table>
+				<table>
+				  <tr>
+				    <td align="center"  bgcolor="#E77918" style="border:solid 3px; border-color:#741353; font-size:12px; padding:5px; letter-spacing:1px"><div align="center"> <strong> <font   color="#003380">&raquo;&nbsp;Zach&#281;camy  do subskrypcji</font> <a href="http://www.e-firma.com.pl/newsletter/index.php?portal=mt2856&amp;a=2856/10&amp;f=email"> <font color="#FFFFFF">bezp&#322;atnych serwis&#243;w bran&#380;owych</font></a> &nbsp;<font color="#003380">&laquo;</font></strong></div></td>
+			      </tr>
+		  </table>
+		</div>
+</div>
+</body>
+</html>
+
