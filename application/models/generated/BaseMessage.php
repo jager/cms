@@ -43,7 +43,10 @@ abstract class BaseMessage extends Doctrine_Record {
              'fixed' => 1,
              'length' => '1',
              ));
-
+        $this->hasColumn('parent_id', 'integer', 4, array(
+             'type' => 'integer',
+             'length' => '4',
+             ));
         $this->option('collate', 'utf8_polish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'MyISAM');
